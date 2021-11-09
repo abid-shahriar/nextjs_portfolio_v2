@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --color-primary: #fcfcfc;
+  --color-secondary: #19d600;
+  --color-tertiary: rgb(32, 34, 37);
+  --bg-dark: #020d19;
+  --dark-cyan: #001628;
+  --bg-secondary: #0f2027;
+
+  /* fonts */
+  --font-primary: 'Roboto Slab', serif;
+
+  /* heights */
+  --nav-height: 70px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+}
+
+@import './heroAnimation';
+@import './navbar';
