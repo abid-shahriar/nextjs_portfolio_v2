@@ -18,6 +18,9 @@
 
   /* heights */
   --nav-height: 70px;
+
+  /* delay */
+  --preloader-delay: 2s;
 }
 
 html {
@@ -27,6 +30,20 @@ html {
 body {
   color: var(--color-primary);
   font-family: var(--font-primary);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #4fcc3f;
+}
+
+::selection {
+  color: black;
+  background-color: #0b5f00;
 }
 
 @import './heroAnimation';

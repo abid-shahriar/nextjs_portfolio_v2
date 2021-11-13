@@ -7,22 +7,22 @@ export default function SocialIcons() {
   return (
     <IconsContainer>
       <Link href='https://github.com/abid-shahriar' passHref>
-        <a target='_blank' rel='noopener noreferrer nofollow'>
+        <a target='_blank' rel='noopener noreferrer nofollow' className='wow fadeInUp' data-wow-delay='2.7s'>
           <FaGithubSquare />
         </a>
       </Link>
       <Link href='https://linkedin.com/in/abidshahriar/' passHref>
-        <a target='_blank' rel='noopener noreferrer nofollow'>
+        <a target='_blank' rel='noopener noreferrer nofollow' className='wow fadeInUp' data-wow-delay='2.9s'>
           <FaLinkedin />
         </a>
       </Link>
       <Link href='https://instagram.com/find.abid' passHref>
-        <a target='_blank' rel='noopener noreferrer nofollow'>
+        <a target='_blank' rel='noopener noreferrer nofollow' className='wow fadeInUp' data-wow-delay='3.1s'>
           <FaInstagramSquare />
         </a>
       </Link>
       <Link href='https://facebook.com/abid.sh.akash' passHref>
-        <a target='_blank' rel='noopener noreferrer nofollow'>
+        <a target='_blank' rel='noopener noreferrer nofollow' className='wow fadeInUp' data-wow-delay='3.3s'>
           <FaFacebookSquare />
         </a>
       </Link>

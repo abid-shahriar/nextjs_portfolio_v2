@@ -8,17 +8,20 @@ export default function HeroSection() {
     <StyledSection>
       <BackgroundAnimation />
       <InitialInfo>
-        <Typography variant='title' textAlign='center' fontSize='4rem' fontWeight='400'>
-          Hello,{' '}
-          <Typography variant='span' color='var(--color-secondary)'>
-            Abid Shahriar
-          </Typography>{' '}
-          here
-        </Typography>
-
-        <Typography fontSize='3.5rem' textAlign='center'>
-          Full-Stack(MERN) Developer from Bangladesh{' '}
-        </Typography>
+        <div className='wow fadeInUp' data-wow-delay='2.2s'>
+          <Typography variant='title' textAlign='center' fontSize='4rem' fontWeight='400'>
+            Hello,{' '}
+            <Typography variant='span' color='var(--color-secondary)'>
+              Abid Shahriar
+            </Typography>{' '}
+            here
+          </Typography>
+        </div>
+        <div className='wow fadeInUp' data-wow-delay='2.5s'>
+          <Typography fontSize='3.5rem' textAlign='center'>
+            Full-Stack(MERN) Developer{' '}
+          </Typography>
+        </div>
       </InitialInfo>
 
       <SocialIcons />

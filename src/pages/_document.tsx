@@ -30,16 +30,19 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang='en'>
         <Head>
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='true' />
 
           <link href='https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap' rel='stylesheet' />
+
+          <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css' />
         </Head>
         <body>
           <Main />
           <NextScript />
+          <script src='/scripts/wow.js' defer></script>
         </body>
       </Html>
     );

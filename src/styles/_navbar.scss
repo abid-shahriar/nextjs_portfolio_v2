@@ -32,7 +32,10 @@
   overflow: hidden;
   width: 100%;
   height: auto;
-  transition: 2s;
+  transition: 1s;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 
   @include respond(tab-port) {
     position: absolute;
@@ -41,13 +44,14 @@
   }
 
   .nav-container {
+    transition: 1s;
     width: 100%;
     background-color: var(--dark-cyan);
     @include flexCenter();
     padding: 0 2.5%;
     flex-direction: row-reverse;
     justify-content: space-between;
-    border-bottom: 2px var(--color-secondary) solid;
+    border-bottom: 1px var(--color-secondary) solid;
     position: relative;
 
     @include respond(tab-port) {
@@ -59,7 +63,7 @@
       @include flexCenter;
       text-align: left;
       transition: height 0.3s linear;
-      height: calc(var(--nav-height) - 2px);
+      height: calc(var(--nav-height) - 1px);
 
       @include respond(tab-port) {
         flex-direction: column;
@@ -136,29 +140,35 @@
 }
 
 #nav .toggle {
-  height: 27rem;
+  height: 20rem !important;
 }
 
 #nav .active {
-  transform: scale(1.2);
+  // transform: scale(1.2);
 
   p {
     background-color: transparent;
   }
   p::after {
     transform: translateY(0) translateX(-50%) rotate(315deg);
-    background-color: red !important;
+    // background-color: red !important;
   }
 
   p::before {
     transform: translateY(0) translateX(-50%) rotate(-315deg);
-    background-color: red;
+    // background-color: red;
   }
 }
 
 .nav-fixed {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  animation: navAnimation 0.4s linear;
+  animation: navAnimation 0.7s linear;
+
+  @keyframes navAnimation {
+    0% {
+      transform: translateY(-150%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 }

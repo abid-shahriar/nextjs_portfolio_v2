@@ -1,4 +1,16 @@
+import { useEffect } from 'react';
+
 export default function Navbar() {
+  useEffect(() => {
+    const navToggle = document.querySelector('.nav-toggle')!;
+    const menuItem = document.querySelector('.menu-item')!;
+
+    navToggle.addEventListener('click', () => {
+      menuItem.classList.toggle('toggle');
+      navToggle.classList.toggle('active');
+    });
+  }, []);
+
   return (
     <nav id='nav'>
       <div className='nav-container'>
