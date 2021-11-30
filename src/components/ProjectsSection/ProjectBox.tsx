@@ -14,7 +14,7 @@ interface ProjectBoxProps {
   delay: string;
 }
 
-export default function ProjectBox({ img, title, responsiveness, description, stack, liveLink, codeLink, delay }: ProjectBoxProps) {
+export default function ProjectBox({ img, title, responsiveness, stack, liveLink, codeLink, delay }: ProjectBoxProps) {
   return (
     <Container className='wow fadeInUp' style={{ animationDelay: delay }}>
       <Image src={img} alt={title} />
