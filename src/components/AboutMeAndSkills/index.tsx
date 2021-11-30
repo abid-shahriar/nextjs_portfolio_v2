@@ -203,6 +203,7 @@ const StyledSection = styled.section`
   }
 
   a {
+    cursor: pointer;
     text-decoration: none;
     font-weight: 300;
     color: #43a9fc;
