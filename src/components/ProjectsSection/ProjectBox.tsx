@@ -16,7 +16,7 @@ interface ProjectBoxProps {
 
 export default function ProjectBox({ img, title, responsiveness, description, stack, liveLink, codeLink, delay }: ProjectBoxProps) {
   return (
-    <Container className='wow fadeInUp' data-wow-delay={delay}>
+    <Container className='wow fadeInUp' style={{ animationDelay: delay }}>
       <Image src={img} alt={title} />
 
       <Typography fontSize='2.5rem' fontWeight='500' textTransform='capitalize' margin='2rem 0 1rem 0'>
@@ -53,6 +53,8 @@ const Container = styled.div`
   backdrop-filter: blur(3px);
   box-shadow: -3px 3px 0px 3px rgba(255, 255, 255, 0.2);
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 720px) {
     min-width: 100%;
@@ -77,8 +79,10 @@ const Image = styled.img`
 
 const StacksWrapper = styled.div`
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 2rem;
+  flex-grow: 1;
 `;
 
 const Stack = styled(Typography)`

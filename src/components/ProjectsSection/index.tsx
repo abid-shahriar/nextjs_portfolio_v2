@@ -1,8 +1,19 @@
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { Typography } from '..';
+
 import ProjectBox from './ProjectBox';
 
 export default function Projects() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mobileWith = window.innerWidth < 992;
+
+    if (mobileWith) {
+      setIsMobile(true);
+    }
+  }, []);
+
   return (
     <SectionContainer id='projects'>
       <ProjectsWrapper>
@@ -13,7 +24,7 @@ export default function Projects() {
           stack={['TypeScript', 'NextJS', 'Styled-Components', 'Redux', 'ChartJS', 'RapidApi', 'CoinrankingApi']}
           codeLink='https://github.com/abid-shahriar/crypto-sphere'
           liveLink='https://cryptosphere.vercel.app'
-          delay='.5s'
+          delay={isMobile ? '0.5s' : '0.5s'}
         />
         <ProjectBox
           img='/img/wikiance.jpg'
@@ -22,7 +33,7 @@ export default function Projects() {
           stack={['TypeScript', 'SCSS', 'NextJS', 'ReactJS', 'Styled-Components', 'React-Icons']}
           codeLink=''
           liveLink='https://wikiance.com'
-          delay='.7s'
+          delay={isMobile ? '0.5s' : '0.7s'}
         />
         <ProjectBox
           img='/img/techiio.jpg'
@@ -31,7 +42,7 @@ export default function Projects() {
           stack={['ReactJS', 'Redux', 'Styled-Components', 'SCSS', 'semantic-ui-react', 'React-PDF']}
           codeLink=''
           liveLink='https://techiio.com'
-          delay='.9s'
+          delay={isMobile ? '0.5s' : '0.9s'}
         />
         <ProjectBox
           img='/img/eevee.jpg'
@@ -40,7 +51,7 @@ export default function Projects() {
           stack={['TypeScript', 'SCSS', 'NextJS', 'ReactJS', 'Styled-Components', 'WowJS']}
           codeLink=''
           liveLink='https://eevee.to'
-          delay='1.1s'
+          delay={isMobile ? '0.5s' : '1.1s'}
         />
         <ProjectBox
           img='/img/food-o-clock.jpg'
@@ -49,7 +60,7 @@ export default function Projects() {
           stack={['HTML', 'CSS', 'SCSS', 'JavaScript']}
           codeLink='https://github.com/abid-shahriar/restaurant-website'
           liveLink='https://abid-shahriar.github.io/restaurant-website/'
-          delay='1.3s'
+          delay={isMobile ? '0.5s' : '1.3s'}
         />
         <ProjectBox
           img='/img/memory-game.jpg'
@@ -58,7 +69,7 @@ export default function Projects() {
           stack={['ReactJS', 'TailwindCSS', 'TypeScript']}
           codeLink='https://github.com/abid-shahriar/memory-game'
           liveLink='https://memory123.netlify.app'
-          delay='1.5s'
+          delay={isMobile ? '0.5s' : '1.5s'}
         />
       </ProjectsWrapper>
     </SectionContainer>

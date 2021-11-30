@@ -1,20 +1,17 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import { HeroSection, Navbar, SkillsSection, Preloader, ProjectsSection, ContactSection } from '../components';
+import { HeroSection, Preloader, ProjectsSection } from '../components';
 import AboutMeAndSkills from '../components/AboutMeAndSkills';
 
 export default function Home() {
   return (
     <>
       <Preloader />
-      {/* <Navbar /> */}
 
       <Main>
         <HeroSection />
         <AboutMeAndSkills />
-        {/* <SkillsSection /> */}
         <ProjectsSection />
-        {/* <ContactSection /> */}
       </Main>
 
       <Head>
@@ -27,12 +24,6 @@ export default function Home() {
 }
 
 const Main = styled.main`
-  /* margin-top: calc(var(--nav-height) - 1px); */
-
-  /* @media (max-width: 900px) {
-    margin-top: 50px;
-  } */
-
   section {
     padding: 5rem 2.5%;
   }
