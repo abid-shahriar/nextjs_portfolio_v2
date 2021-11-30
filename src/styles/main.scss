@@ -17,7 +17,10 @@
   --font-primary: 'Roboto Slab', serif;
 
   /* heights */
-  --nav-height: 70px;
+  --nav-height: 0px;
+
+  // widths
+  --max-width: 1400px;
 
   /* delay */
   --preloader-delay: 2s;
@@ -25,11 +28,16 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--color-primary);
   font-family: var(--font-primary);
+}
+
+section {
+  scroll-margin-top: var(--nav-height);
 }
 
 ::-webkit-scrollbar {

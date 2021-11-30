@@ -9,18 +9,18 @@ export default function HeroSection() {
       <BackgroundAnimation />
       <InitialInfo>
         <div className='wow fadeInUp' data-wow-delay='2.2s'>
-          <Typography variant='title' textAlign='center' fontSize='4rem' fontWeight='400'>
+          <StyledTypo variant='title' textAlign='center' fontSize='4rem' fontWeight='400'>
             Hello,{' '}
             <Typography variant='span' color='var(--color-secondary)'>
               Abid Shahriar
             </Typography>{' '}
             here
-          </Typography>
+          </StyledTypo>
         </div>
         <div className='wow fadeInUp' data-wow-delay='2.5s'>
-          <Typography fontSize='3.5rem' textAlign='center'>
-            Full-Stack(MERN) Developer{' '}
-          </Typography>
+          <StyledTypo fontSize='3.5rem' textAlign='center'>
+            Full-Stack JavaScript Developer{' '}
+          </StyledTypo>
         </div>
       </InitialInfo>
 
@@ -46,4 +46,13 @@ const StyledSection = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+`;
+
+const StyledTypo = styled(Typography)`
+  @media (max-width: 520px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 400px) {
+    font-size: 2.5rem;
+  }
 `;

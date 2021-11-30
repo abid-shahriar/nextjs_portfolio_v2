@@ -46,12 +46,11 @@
   .nav-container {
     transition: 1s;
     width: 100%;
-    background-color: var(--dark-cyan);
+    background-color: var(--bg-dark);
     @include flexCenter();
     padding: 0 2.5%;
     flex-direction: row-reverse;
     justify-content: space-between;
-    border-bottom: 1px var(--color-secondary) solid;
     position: relative;
 
     @include respond(tab-port) {
