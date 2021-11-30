@@ -187,7 +187,8 @@ const SkillsWrapper = styled.div`
 
 const StyledSection = styled.section`
   min-height: calc(100vh - var(--nav-height));
-  background-color: #141722;
+  background-color: var(--bg-dark);
+
   display: flex;
   flex-direction: column;
   align-items: center;

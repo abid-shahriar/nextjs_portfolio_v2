@@ -48,10 +48,8 @@ const Container = styled.div`
   min-width: 320px;
   border-radius: 5px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3px);
-  box-shadow: -3px 3px 0px 3px rgba(255, 255, 255, 0.2);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+  background-color: rgba(133, 133, 133, 0.05);
   padding: 2rem;
   display: flex;
   flex-direction: column;
