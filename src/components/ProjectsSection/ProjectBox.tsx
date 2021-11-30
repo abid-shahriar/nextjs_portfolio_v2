@@ -48,7 +48,6 @@ const Container = styled.div`
   min-width: 320px;
   border-radius: 5px;
   overflow: hidden;
-  /* border: 1px solid rgba(255, 255, 255, 0.1); */
   background-color: rgba(133, 133, 133, 0.05);
   padding: 2rem;
   display: flex;
