@@ -115,7 +115,7 @@ export default function AboutMeAndSkills() {
 
 const AboutMe = styled.div`
   padding: 2rem;
-  background-color: rgba(133, 133, 133, 0.05);
+  background-color: rgba(133, 133, 133, 0.2);
   border-radius: 5px;
   display: flex;
   justify-content: flex-start;
@@ -155,7 +155,7 @@ const ImageContainer = styled.div`
 
 const Skills = styled.div`
   padding: 2rem;
-  background-color: rgba(133, 133, 133, 0.05);
+  background-color: rgba(133, 133, 133, 0.2);
   border-radius: 5px;
   max-width: var(--max-width);
 `;

@@ -7,22 +7,22 @@ export default function SocialIcons() {
   return (
     <IconsContainer>
       <Link href='https://github.com/abid-shahriar' passHref>
-        <a target='_blank' rel='noopener noreferrer nofollow' className='wow fadeInUp' data-wow-delay='2.7s'>
+        <a target='_blank' rel='noopener noreferrer nofollow' className='wow fadeInUp' data-wow-delay='2.7s' title='github icon'>
           <FaGithubSquare />
         </a>
       </Link>
       <Link href='https://linkedin.com/in/abidshahriar/' passHref>
-        <a target='_blank' rel='noopener noreferrer nofollow' className='wow fadeInUp' data-wow-delay='2.9s'>
+        <a target='_blank' rel='noopener noreferrer nofollow' className='wow fadeInUp' data-wow-delay='2.9s' title='linkedin icon'>
           <FaLinkedin />
         </a>
       </Link>
       <Link href='https://instagram.com/find.abid' passHref>
-        <a target='_blank' rel='noopener noreferrer nofollow' className='wow fadeInUp' data-wow-delay='3.1s'>
+        <a target='_blank' rel='noopener noreferrer nofollow' className='wow fadeInUp' data-wow-delay='3.1s' title='instagram icon'>
           <FaInstagramSquare />
         </a>
       </Link>
       <Link href='https://facebook.com/abid.sh.akash' passHref>
-        <a target='_blank' rel='noopener noreferrer nofollow' className='wow fadeInUp' data-wow-delay='3.3s'>
+        <a target='_blank' rel='noopener noreferrer nofollow' className='wow fadeInUp' data-wow-delay='3.3s' title='facebook icon'>
           <FaFacebookSquare />
         </a>
       </Link>

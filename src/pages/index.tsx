@@ -16,7 +16,7 @@ export default function Home() {
 
       <Head>
         <title>Abid Shahriar</title>
-        <meta name='description' content="Abid Shahriar here. I'm a full-stack(MERN) developer from Bangladesh" />
+        <meta name='description' content='Full stack JavaScript developer from Bangladesh' />
         <link rel='shortcut icon' type='image/png' href='/favicon.png' />
       </Head>
     </>

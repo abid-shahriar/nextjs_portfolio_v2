@@ -31,7 +31,7 @@ export default function ProjectBox({ img, title, responsiveness, stack, liveLink
       </StacksWrapper>
 
       <LinksWrapper>
-        <CodeLink href={codeLink} codeLink={codeLink} target='_blank' rel='noopener noreferrer nofollow'>
+        <CodeLink href={codeLink || 'https://abidshahriar.me/'} codeLink={codeLink} target='_blank' rel='noopener noreferrer nofollow'>
           <FaGithubAlt size='2rem' />
           <Typography>Code</Typography>
         </CodeLink>
@@ -48,7 +48,7 @@ const Container = styled.div`
   min-width: 320px;
   border-radius: 5px;
   overflow: hidden;
-  background-color: rgba(133, 133, 133, 0.05);
+  background-color: rgba(133, 133, 133, 0.2);
   padding: 2rem;
   display: flex;
   flex-direction: column;
