@@ -1,17 +1,17 @@
 import Head from 'next/head';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import { HeroSection, Preloader, ProjectsSection, Footer } from '../components';
 import AboutMeAndSkills from '../components/AboutMeAndSkills';
 
 export default function Home() {
-  const mainRef = useRef<any>(null);
-
   useEffect(() => {
-    mainRef.current.style.height = '0px';
+    document.body.style.maxHeight = '100vh';
+    document.body.style.overflow = 'hidden';
 
     setTimeout(() => {
-      mainRef.current.style.height = 'auto';
+      document.body.style.maxHeight = 'auto';
+      document.body.style.overflow = 'auto';
     }, 1999);
   });
 
@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <Preloader />
 
-      <Main ref={mainRef}>
+      <Main>
         <HeroSection />
         <AboutMeAndSkills />
         <ProjectsSection />
