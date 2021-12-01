@@ -1,14 +1,25 @@
 import Head from 'next/head';
+import { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { HeroSection, Preloader, ProjectsSection, Footer } from '../components';
 import AboutMeAndSkills from '../components/AboutMeAndSkills';
 
 export default function Home() {
+  const mainRef = useRef<any>(null);
+
+  useEffect(() => {
+    mainRef.current.style.height = '0px';
+
+    setTimeout(() => {
+      mainRef.current.style.height = 'auto';
+    }, 1999);
+  });
+
   return (
     <>
       <Preloader />
 
-      <Main>
+      <Main ref={mainRef}>
         <HeroSection />
         <AboutMeAndSkills />
         <ProjectsSection />
@@ -32,6 +43,7 @@ export default function Home() {
 }
 
 const Main = styled.main`
+  overflow: hidden;
   section {
     padding: 5rem 2.5%;
   }
