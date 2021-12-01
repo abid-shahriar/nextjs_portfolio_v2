@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Typography } from '..';
 import SkillBox from './SkillBox';
+import SocialIcons from './SocialIcons';
 
 export default function AboutMeAndSkills() {
   const [isMobile, setIsMobile] = useState(false);
@@ -34,13 +35,13 @@ export default function AboutMeAndSkills() {
         <BioInfo>
           <div className='wow fadeInUp' style={{ animationDelay: isMobile ? '0.5s' : '0.5s' }}>
             <Typography>
-              -- self-taught full stack JavaScript developer from Bangladesh. I have been working in this field for 2.5+ years and I love what I do.
+              I&apos;m a self-taught full stack JavaScript developer from Bangladesh with 2.5+ years of experience in web development.
             </Typography>
           </div>
 
           <div className='wow fadeInUp' style={{ animationDelay: isMobile ? '0.5s' : '0.7s' }}>
             <Typography margin='1rem 0 4rem 0'>
-              -- Currently working as a Backend Engineer at{' '}
+              Currently working as a Backend Engineer at{' '}
               <a href='https://valkyrietm.com/' target='_blank' rel='noopener noreferrer'>
                 ValkyrieTM
               </a>
@@ -62,6 +63,7 @@ export default function AboutMeAndSkills() {
               Resume: <a onClick={handlePdfDownload}>Click here to download</a>
             </Typography>
           </div>
+          <SocialIcons isMobile={isMobile} />
         </BioInfo>
       </AboutMe>
       <Skills>
@@ -135,11 +137,11 @@ const AboutMe = styled.div`
 const BioInfo = styled.div``;
 
 const ImageContainer = styled.div`
-  margin-bottom: 2rem;
   margin-right: 4rem;
 
   @media (max-width: 992px) {
     margin-right: 0;
+    margin-bottom: 2rem;
   }
 
   img {
@@ -187,7 +189,7 @@ const SkillsWrapper = styled.div`
 
 const StyledSection = styled.section`
   min-height: calc(100vh - var(--nav-height));
-  background-color: var(--bg-dark);
+  background-color: #171e2e;
 
   display: flex;
   flex-direction: column;

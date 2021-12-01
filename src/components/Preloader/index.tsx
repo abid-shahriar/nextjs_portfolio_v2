@@ -81,7 +81,7 @@ const PreloaderContainer = styled.div`
 `;
 
 const RocketWrapper = styled.div`
-  height: 250px;
+  height: 150px;
   position: relative;
   animation: rocket-fly 1.5s linear infinite;
   z-index: 100;
@@ -90,7 +90,7 @@ const RocketWrapper = styled.div`
   &::after {
     content: '';
     position: absolute;
-    height: 200px;
+    height: 150px;
     width: 30px;
     background: linear-gradient(to bottom, #00b7ff, transparent);
     bottom: 0;

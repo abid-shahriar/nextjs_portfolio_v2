@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import { HeroSection, Preloader, ProjectsSection } from '../components';
+import { HeroSection, Preloader, ProjectsSection, Footer } from '../components';
 import AboutMeAndSkills from '../components/AboutMeAndSkills';
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
         <AboutMeAndSkills />
         <ProjectsSection />
       </Main>
+      <Footer />
 
       <Head>
         <title>Abid Shahriar</title>
