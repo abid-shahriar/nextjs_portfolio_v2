@@ -47,8 +47,8 @@ export default function Projects() {
         <ProjectBox
           img='/img/eevee.jpg'
           title='Eevee'
-          responsiveness='partial responsive'
-          stack={['TypeScript', 'SCSS', 'NextJS', 'ReactJS', 'Styled-Components', 'WowJS']}
+          responsiveness='full responsive'
+          stack={['TypeScript', 'SCSS', 'NextJS', 'Styled-Components', 'WowJS', 'React-Slick']}
           codeLink=''
           liveLink='https://eevee.to'
           delay={isMobile ? '0.5s' : '1.1s'}
