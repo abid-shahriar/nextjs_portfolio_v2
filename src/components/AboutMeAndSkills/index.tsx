@@ -43,7 +43,7 @@ export default function AboutMeAndSkills() {
             <Typography margin='1rem 0 4rem 0'>
               Currently working as a Backend Engineer at{' '}
               <a href='https://valkyrietm.com/' target='_blank' rel='noopener noreferrer'>
-                ValkyrieTM
+                Valkyrie IT LTD.
               </a>
             </Typography>
           </div>

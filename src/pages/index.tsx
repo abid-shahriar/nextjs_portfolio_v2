@@ -30,11 +30,11 @@ export default function Home() {
         <title>Abid Shahriar</title>
         <meta
           name='description'
-          content='Creative full stack JavaScript Developer from Bangladesh. Have a passion for building responsive, interactive and secure web applications.'
+          content='Creative full stack JavaScript Developer from Bangladesh. Skilled in building responsive, interactive and secure web applications.'
         />
         <meta
           name='og:description'
-          content='Creative full stack JavaScript Developer from Bangladesh. Have a passion for building responsive, interactive and secure web applications.'
+          content='Creative full stack JavaScript Developer from Bangladesh. Skilled in building responsive, interactive and secure web applications.'
         />
       </Head>
     </>
