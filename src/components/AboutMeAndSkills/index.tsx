@@ -28,38 +28,39 @@ export default function AboutMeAndSkills() {
   return (
     <StyledSection>
       <AboutMe>
-        <ImageContainer className='wow fadeInUp'>
-          <img src='./me.jpg' alt='abid shahriar' />
+        <ImageContainer className="wow fadeInUp">
+          <img src="./me.jpg" alt="abid shahriar" />
         </ImageContainer>
 
         <BioInfo>
-          <div className='wow fadeInUp' style={{ animationDelay: isMobile ? '0.5s' : '0.5s' }}>
+          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.5s' }}>
             <Typography>
-              I&apos;m a self-taught full stack JavaScript developer from Bangladesh with 2.5+ years of experience in web development.
+              I&apos;m a self-taught full stack JavaScript developer from Bangladesh with 2.5+ years of experience in web
+              development.
             </Typography>
           </div>
 
-          <div className='wow fadeInUp' style={{ animationDelay: isMobile ? '0.5s' : '0.7s' }}>
-            <Typography margin='1rem 0 4rem 0'>
+          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.7s' }}>
+            <Typography margin="1rem 0 4rem 0">
               Currently working as a Backend Engineer at{' '}
-              <a href='https://valkyrietm.com/' target='_blank' rel='noopener noreferrer'>
+              <a href="https://valkyrietm.com/" target="_blank" rel="noopener noreferrer">
                 Valkyrie IT LTD.
               </a>
             </Typography>
           </div>
-          <div className='wow fadeInUp' style={{ animationDelay: isMobile ? '0.5s' : '0.9s' }}>
-            <Typography margin='.5rem 0 0 0'>
-              Email: <a href='mailto:abidshahriar7@gmail.com'>abidshahriar7@gmail.com</a>
+          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.9s' }}>
+            <Typography margin=".5rem 0 0 0">
+              Email: <a href="mailto:abidshahriar7@gmail.com">abidshahriar7@gmail.com</a>
             </Typography>
           </div>
 
-          <div className='wow fadeInUp' style={{ animationDelay: isMobile ? '0.5s' : '1.2s' }}>
-            <Typography margin='.5rem 0 0 0'>
-              Phone: <a href='tel:+8801726389558'>+8801726389558</a>
+          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '1.2s' }}>
+            <Typography margin=".5rem 0 0 0">
+              Phone: <a href="tel:+8801726389558">+8801726389558</a>
             </Typography>
           </div>
-          <div className='wow fadeInUp' style={{ animationDelay: isMobile ? '0.5s' : '1.5s' }}>
-            <Typography margin='.5rem 0 0 0'>
+          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '1.5s' }}>
+            <Typography margin=".5rem 0 0 0">
               Resume: <a onClick={handlePdfDownload}>Click here to download</a>
             </Typography>
           </div>
@@ -67,46 +68,70 @@ export default function AboutMeAndSkills() {
         </BioInfo>
       </AboutMe>
       <Skills>
-        <div className='wow fadeInUp' style={{ animationDelay: isMobile ? '0.5s' : '0.5s' }}>
-          <Typography margin='0 0 2rem 0'>
-            I have worked with a bunch of technologies in the web development world. I always try to learn new things and do experiment with them and
-            I always try to keep myself up-to-date as this field is constantly evolving.
+        <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.5s' }}>
+          <Typography margin="0 0 2rem 0">
+            I have worked with a bunch of technologies in the web development world. I always try to learn new things and do
+            experiment with them and I always try to keep myself up-to-date as this field is constantly evolving.
           </Typography>
         </div>
 
-        <div className='wow fadeInUp' style={{ animationDelay: isMobile ? '0.5s' : '0.7s' }}>
+        <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.7s' }}>
           <Typography>Here are some of the technologies I have worked with:</Typography>
         </div>
 
         <SkillsWrapper>
-          <div className='wow fadeInUp' style={{ animationDelay: isMobile ? '0.5s' : '1s' }}>
+          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '1s' }}>
             <SkillBox
-              title='frontend'
+              title="frontend"
               skills={[
                 'HTML',
                 'CSS',
-                'SCSS',
                 'JavaScript',
+                'SCSS',
                 'ReactJS',
-                'NextJs',
+                'NextJS',
                 'Redux',
+                'ReactPDF',
                 'Styled Components',
-                'ContextApi',
                 'StoryBook',
-                'React-PDF'
+                'ContextApi',
               ]}
             />
           </div>
-          <div className='wow fadeInUp' style={{ animationDelay: isMobile ? '0.5s' : '1.3s' }}>
+          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '1.3s' }}>
             <SkillBox
-              title='backend'
-              skills={['NodeJS', 'Express', 'Mongoose', 'REST Api', 'CORS', 'Cookie', 'Prisma', 'MongoDB', 'Postgres', 'Knex', 'Formidable']}
+              title="backend"
+              skills={[
+                'NodeJS',
+                'MongoDB',
+                'Express',
+                'Postgres',
+                'Knex',
+                'Mongoose',
+                'Cookie',
+                'Prisma',
+                'CORS',
+                'REST Api',
+                'Formidable',
+              ]}
             />
           </div>
-          <div className='wow fadeInUp' style={{ animationDelay: isMobile ? '0.5s' : '1.5s' }}>
+          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '1.5s' }}>
             <SkillBox
-              title='others'
-              skills={['TypeScript', 'git', 'github', 'Jira', 'Jenkins', 'Trello', 'ESlint', 'SEO', 'Testing', 'web hosting', 'Responsive Design']}
+              title="others"
+              skills={[
+                'TypeScript',
+                'github',
+                'git',
+                'Photoshop',
+                'Figma',
+                'ESlint',
+                'Testing',
+                'MailGun',
+                'Responsive Design',
+                'DigitalOcean',
+                'SEO',
+              ]}
             />
           </div>
         </SkillsWrapper>
