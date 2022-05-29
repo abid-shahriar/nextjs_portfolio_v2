@@ -43,7 +43,7 @@ export default function AboutMeAndSkills() {
           <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.7s' }}>
             <Typography margin="1rem 0 4rem 0">
               Currently working as a Backend Engineer at{' '}
-              <a href="https://valkyrietm.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.valkyrie-it.com/deck" target="_blank" rel="noopener noreferrer">
                 Valkyrie IT LTD.
               </a>
             </Typography>
