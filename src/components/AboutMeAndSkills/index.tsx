@@ -35,7 +35,7 @@ export default function AboutMeAndSkills() {
         <BioInfo>
           <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.5s' }}>
             <Typography>
-              I&apos;m a self-taught full stack JavaScript developer from Bangladesh with 2.5+ years of experience in web
+              I&apos;m a self-taught full stack JavaScript developer from Bangladesh with 3+ years of experience in web
               development.
             </Typography>
           </div>
