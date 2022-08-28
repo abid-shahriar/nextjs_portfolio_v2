@@ -70,8 +70,9 @@ export default function AboutMeAndSkills() {
       <Skills>
         <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.5s' }}>
           <Typography margin="0 0 2rem 0">
-            I have worked with a bunch of technologies in the web development world. I always try to learn new things and do
-            experiment with them and I always try to keep myself up-to-date as this field is constantly evolving.
+            For my office work and practice projects, I have worked with a lof of technologies from this web development world. In
+            this constantly evolving field, I always try to keep myself up-to-date with latest technologies. Learning new
+            technologies and doing experiments with them is kinda my thing.
           </Typography>
         </div>
 
