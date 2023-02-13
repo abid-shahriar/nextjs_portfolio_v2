@@ -59,7 +59,7 @@ export default function Projects() {
           responsiveness="full responsive"
           stack={['TypeScript', 'NextJS', 'NextJS(ISR)', 'Styled-Components', 'react-slick', 'MovieDB Api']}
           codeLink="https://github.com/abid-shahriar/moviesphere"
-          liveLink="https://moviesphere.abidshahriar.me/"
+          liveLink="https://moviesphere.vercel.app/"
           delay={isMobile ? '0.5s' : '1.3s'}
         />
         <ProjectBox
