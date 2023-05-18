@@ -4,15 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
-out
+
 
 # testing
 /coverage
 
 # next.js
 /.next/
-/out/
-/out
+
 
 # production
 /build
