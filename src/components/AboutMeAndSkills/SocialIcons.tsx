@@ -6,46 +6,46 @@ import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaGithubSquare } from 
 export default function SocialIcons({ isMobile }: { isMobile: boolean }) {
   return (
     <IconsContainer>
-      <Link href='https://github.com/abid-shahriar' passHref>
+      <Link href="https://github.com/abid-shahriar" passHref legacyBehavior>
         <a
-          target='_blank'
-          rel='noopener noreferrer nofollow'
-          className='wow fadeInUp'
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="wow fadeInUp"
           style={{ animationDelay: isMobile ? '0.5s' : '1.7s' }}
-          title='github icon'
+          title="github icon"
         >
           <FaGithubSquare />
         </a>
       </Link>
-      <Link href='https://linkedin.com/in/abidshahriar/' passHref>
+      <Link href="https://linkedin.com/in/abidshahriar/" passHref legacyBehavior>
         <a
-          target='_blank'
-          rel='noopener noreferrer nofollow'
-          className='wow fadeInUp'
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="wow fadeInUp"
           style={{ animationDelay: isMobile ? '0.7s' : '1.9s' }}
-          title='linkedin icon'
+          title="linkedin icon"
         >
           <FaLinkedin />
         </a>
       </Link>
-      <Link href='https://instagram.com/find.abid' passHref>
+      <Link href="https://instagram.com/find.abid" passHref legacyBehavior>
         <a
-          target='_blank'
-          rel='noopener noreferrer nofollow'
-          className='wow fadeInUp'
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="wow fadeInUp"
           style={{ animationDelay: isMobile ? '0.9s' : '2.1s' }}
-          title='instagram icon'
+          title="instagram icon"
         >
           <FaInstagramSquare />
         </a>
       </Link>
-      <Link href='https://facebook.com/abid.sh.akash' passHref>
+      <Link href="https://facebook.com/abid.sh.akash" passHref legacyBehavior>
         <a
-          target='_blank'
-          rel='noopener noreferrer nofollow'
-          className='wow fadeInUp'
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="wow fadeInUp"
           style={{ animationDelay: isMobile ? '1.1s' : '2.3s' }}
-          title='facebook icon'
+          title="facebook icon"
         >
           <FaFacebookSquare />
         </a>

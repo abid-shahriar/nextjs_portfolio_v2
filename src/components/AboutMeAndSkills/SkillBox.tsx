@@ -9,14 +9,14 @@ export default function SkillBox({ skills, title }: SkillBoxProps) {
   return (
     <Container>
       <div>
-        <StyledTypo fontSize='2.2rem' textTransform='capitalize' fontWeight='400' margin='0 0 2rem 0'>
+        <StyledTypo fontSize="2.2rem" texttransform="capitalize" fontWeight="400" margin="0 0 2rem 0">
           {title}
         </StyledTypo>
       </div>
 
       <div>
         {skills.map((skill, index) => (
-          <Typography key={index} margin='5px 0'>
+          <Typography key={index} margin="5px 0">
             {skill}
           </Typography>
         ))}

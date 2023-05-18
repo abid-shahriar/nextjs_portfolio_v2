@@ -16,13 +16,13 @@ interface ProjectBoxProps {
 
 export default function ProjectBox({ img, title, responsiveness, stack, liveLink, codeLink, delay }: ProjectBoxProps) {
   return (
-    <Container className='wow fadeInUp' style={{ animationDelay: delay }}>
+    <Container className="wow fadeInUp" style={{ animationDelay: delay }}>
       <Image src={img} alt={title} />
 
-      <Typography fontSize='2.5rem' fontWeight='500' textTransform='capitalize' margin='2rem 0 1rem 0'>
+      <Typography fontSize="2.5rem" fontWeight="500" texttransform="capitalize" margin="2rem 0 1rem 0">
         {title}
       </Typography>
-      <Typography textTransform='capitalize'>{responsiveness}</Typography>
+      <Typography texttransform="capitalize">{responsiveness}</Typography>
 
       <StacksWrapper>
         {stack.map((item, index) => (
@@ -31,12 +31,17 @@ export default function ProjectBox({ img, title, responsiveness, stack, liveLink
       </StacksWrapper>
 
       <LinksWrapper>
-        <CodeLink href={codeLink || 'https://abidshahriar.me/'} codeLink={codeLink} target='_blank' rel='noopener noreferrer nofollow'>
-          <FaGithubAlt size='2rem' />
+        <CodeLink
+          href={codeLink || 'https://abidshahriar.me/'}
+          codelink={codeLink}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          <FaGithubAlt size="2rem" />
           <Typography>Code</Typography>
         </CodeLink>
-        <a href={liveLink} target='_blank' rel='noopener noreferrer nofollow'>
-          <FaRegEye size='2rem' />
+        <a href={liveLink} target="_blank" rel="noopener noreferrer nofollow">
+          <FaRegEye size="2rem" />
           <Typography>Live</Typography>
         </a>
       </LinksWrapper>
@@ -59,8 +64,8 @@ const Container = styled.div`
 `;
 
 const CodeLink = styled.a<any>`
-  ${({ codeLink }) =>
-    !codeLink &&
+  ${({ codelink }) =>
+    !codelink &&
     css`
       opacity: 0.5;
       pointer-events: none;

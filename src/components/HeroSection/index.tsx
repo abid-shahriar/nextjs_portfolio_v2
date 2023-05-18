@@ -10,30 +10,30 @@ export default function HeroSection() {
     <StyledSection>
       <BackgroundAnimation />
       <InitialInfo>
-        <div className='wow fadeInUp' data-wow-delay='2.2s'>
-          <StyledTypo variant='title' textAlign='center' fontSize='4rem' fontWeight='400'>
+        <div className="wow fadeInUp" data-wow-delay="2.2s">
+          <StyledTypo variant="title" textalign="center" fontSize="4rem" fontWeight="400">
             Hello there,{' '}
           </StyledTypo>
-          <StyledTypo variant='title' textAlign='center' fontSize='4rem' fontWeight='400'>
-            <Typography variant='span' color='var(--color-secondary)'>
+          <StyledTypo variant="title" textalign="center" fontSize="4rem" fontWeight="400">
+            <Typography variant="span" color="var(--color-secondary)">
               Abid Shahriar
             </Typography>{' '}
             here
           </StyledTypo>
         </div>
 
-        <div className='wow fadeInUp' data-wow-delay='2.5s'>
-          <StyledTypo fontSize='3.5rem' textAlign='center' margin='2rem 0 3rem'>
+        <div className="wow fadeInUp" data-wow-delay="2.5s">
+          <StyledTypo fontSize="3.5rem" textalign="center" margin="2rem 0 3rem">
             Hope you are having a great day!!
           </StyledTypo>
         </div>
-        <div className='wow zoomInUp' data-wow-delay='2.7s' style={{ animationDuration: '2s' }}>
-          <BsFillEmojiLaughingFill size='5rem' color='var(--color-secondary)' />
+        <div className="wow zoomInUp" data-wow-delay="2.7s" style={{ animationDuration: '2s' }}>
+          <BsFillEmojiLaughingFill size="5rem" color="var(--color-secondary)" />
         </div>
       </InitialInfo>
 
-      <DownIcon className='wow fadeInUp' data-wow-delay='2.9s'>
-        <BsChevronDoubleDown size='4rem' color='var(--color-secondary)' />
+      <DownIcon className="wow fadeInUp" data-wow-delay="2.9s">
+        <BsChevronDoubleDown size="4rem" color="var(--color-secondary)" />
       </DownIcon>
     </StyledSection>
   );

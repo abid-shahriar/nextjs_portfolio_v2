@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://abidshahriar.me/sitemap.xml
+Sitemap: https://abidshahriar.vercel.app/sitemap.xml
 
 
 
