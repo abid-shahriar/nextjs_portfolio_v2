@@ -28,19 +28,19 @@ export default function AboutMeAndSkills() {
   return (
     <StyledSection>
       <AboutMe>
-        <ImageContainer className="wow fadeInUp">
+        <ImageContainer>
           <img src="./me.jpg" alt="abid shahriar" />
         </ImageContainer>
 
         <BioInfo>
-          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.5s' }}>
+          <div>
             <Typography>
               I&apos;m a self-taught full stack JavaScript developer from Bangladesh with 3+ years of experience in web
               development.
             </Typography>
           </div>
 
-          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.7s' }}>
+          <div>
             <Typography margin="1rem 0 4rem 0">
               Currently working as a Backend Engineer at{' '}
               <a href="https://www.valkyrie-it.com/deck" target="_blank" rel="noopener noreferrer">
@@ -48,18 +48,18 @@ export default function AboutMeAndSkills() {
               </a>
             </Typography>
           </div>
-          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.9s' }}>
+          <div>
             <Typography margin=".5rem 0 0 0">
               Email: <a href="mailto:abidshahriar7@gmail.com">abidshahriar7@gmail.com</a>
             </Typography>
           </div>
 
-          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '1.2s' }}>
+          <div>
             <Typography margin=".5rem 0 0 0">
               Phone: <a href="tel:+8801726389558">+8801726389558</a>
             </Typography>
           </div>
-          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '1.5s' }}>
+          <div>
             <Typography margin=".5rem 0 0 0">
               Resume: <a onClick={handlePdfDownload}>Click here to download</a>
             </Typography>
@@ -68,7 +68,7 @@ export default function AboutMeAndSkills() {
         </BioInfo>
       </AboutMe>
       <Skills>
-        <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.5s' }}>
+        <div>
           <Typography margin="0 0 2rem 0">
             For my office work and practice projects, I have worked with a lof of technologies from this web development world. In
             this constantly evolving field, I always try to keep myself up-to-date with latest technologies. Learning new
@@ -76,12 +76,12 @@ export default function AboutMeAndSkills() {
           </Typography>
         </div>
 
-        <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '0.7s' }}>
+        <div>
           <Typography>Here are some of the technologies I have worked with:</Typography>
         </div>
 
         <SkillsWrapper>
-          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '1s' }}>
+          <div>
             <SkillBox
               title="frontend"
               skills={[
@@ -99,7 +99,7 @@ export default function AboutMeAndSkills() {
               ]}
             />
           </div>
-          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '1.3s' }}>
+          <div>
             <SkillBox
               title="backend"
               skills={[
@@ -117,7 +117,7 @@ export default function AboutMeAndSkills() {
               ]}
             />
           </div>
-          <div className="wow fadeInUp" style={{ animationDelay: isMobile ? '0.5s' : '1.5s' }}>
+          <div>
             <SkillBox
               title="others"
               skills={[

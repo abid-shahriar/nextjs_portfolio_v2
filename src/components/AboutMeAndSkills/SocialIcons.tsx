@@ -7,46 +7,22 @@ export default function SocialIcons({ isMobile }: { isMobile: boolean }) {
   return (
     <IconsContainer>
       <Link href="https://github.com/abid-shahriar" passHref legacyBehavior>
-        <a
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          className="wow fadeInUp"
-          style={{ animationDelay: isMobile ? '0.5s' : '1.7s' }}
-          title="github icon"
-        >
+        <a target="_blank" rel="noopener noreferrer nofollow" title="github icon">
           <FaGithubSquare />
         </a>
       </Link>
       <Link href="https://linkedin.com/in/abidshahriar/" passHref legacyBehavior>
-        <a
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          className="wow fadeInUp"
-          style={{ animationDelay: isMobile ? '0.7s' : '1.9s' }}
-          title="linkedin icon"
-        >
+        <a target="_blank" rel="noopener noreferrer nofollow" title="linkedin icon">
           <FaLinkedin />
         </a>
       </Link>
       <Link href="https://instagram.com/find.abid" passHref legacyBehavior>
-        <a
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          className="wow fadeInUp"
-          style={{ animationDelay: isMobile ? '0.9s' : '2.1s' }}
-          title="instagram icon"
-        >
+        <a target="_blank" rel="noopener noreferrer nofollow" title="instagram icon">
           <FaInstagramSquare />
         </a>
       </Link>
       <Link href="https://facebook.com/abid.sh.akash" passHref legacyBehavior>
-        <a
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          className="wow fadeInUp"
-          style={{ animationDelay: isMobile ? '1.1s' : '2.3s' }}
-          title="facebook icon"
-        >
+        <a target="_blank" rel="noopener noreferrer nofollow" title="facebook icon">
           <FaFacebookSquare />
         </a>
       </Link>

@@ -11,12 +11,11 @@ interface ProjectBoxProps {
   stack: string[];
   liveLink: string;
   codeLink: string;
-  delay: string;
 }
 
-export default function ProjectBox({ img, title, responsiveness, stack, liveLink, codeLink, delay }: ProjectBoxProps) {
+export default function ProjectBox({ img, title, responsiveness, stack, liveLink, codeLink }: ProjectBoxProps) {
   return (
-    <Container className="wow fadeInUp" style={{ animationDelay: delay }}>
+    <Container>
       <Image src={img} alt={title} />
 
       <Typography fontSize="2.5rem" fontWeight="500" texttransform="capitalize" margin="2rem 0 1rem 0">

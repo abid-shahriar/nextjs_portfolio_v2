@@ -28,13 +28,15 @@ export default function Home() {
 
       <Head>
         <title>Abid Shahriar</title>
+
+        <meta name="og:title" content="Abid Shahriar" />
         <meta
-          name='description'
-          content='Creative full stack JavaScript Developer from Bangladesh. Skilled in building responsive, interactive and secure web applications.'
+          name="description"
+          content="I'm a skilled and imaginative full-stack web developer, specializing in crafting immersive digital experiences that captivate and engage users. By harnessing the power of cutting-edge technologies and frameworks like React, Next, and Node.js, I bring visions to life with stunning front-end interfaces and robust back-end solutions. From seamless database management to the integration of RESTful APIs, I ensure that web applications are not only functional but also optimized for peak performance. With a keen eye for detail and a passion for delivering exceptional quality, I am your go-to partner for building the next generation of web applications that leave a lasting impression."
         />
         <meta
-          name='og:description'
-          content='Creative full stack JavaScript Developer from Bangladesh. Skilled in building responsive, interactive and secure web applications.'
+          name="og:description"
+          content="I'm a skilled and imaginative full-stack web developer, specializing in crafting immersive digital experiences that captivate and engage users. By harnessing the power of cutting-edge technologies and frameworks like React, Next, and Node.js, I bring visions to life with stunning front-end interfaces and robust back-end solutions. From seamless database management to the integration of RESTful APIs, I ensure that web applications are not only functional but also optimized for peak performance. With a keen eye for detail and a passion for delivering exceptional quality, I am your go-to partner for building the next generation of web applications that leave a lasting impression."
         />
       </Head>
     </>

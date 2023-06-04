@@ -18,22 +18,20 @@ export default function Projects() {
     <SectionContainer id="projects">
       <ProjectsWrapper>
         <ProjectBox
-          img="/img/crypto-sphere.jpg"
-          title="cryptosphere"
-          responsiveness="full responsive"
-          stack={['TypeScript', 'NextJS', 'NextJS(ISR)', 'Styled-Components', 'ChartJS', 'RapidApi', 'CoinrankingApi']}
-          codeLink="https://github.com/abid-shahriar/crypto-sphere"
-          liveLink="https://cryptosphere.vercel.app"
-          delay={isMobile ? '0.5s' : '0.5s'}
-        />
-        <ProjectBox
           img="/img/wikiance.jpg"
           title="Wikiance"
           responsiveness="full responsive"
           stack={['TypeScript', 'SCSS', 'NextJS', 'ReactJS', 'Styled-Components', 'React-Icons']}
           codeLink=""
           liveLink="https://wikiance.com"
-          delay={isMobile ? '0.5s' : '0.7s'}
+        />
+        <ProjectBox
+          img="/img/zesan-co.jpg"
+          title="UI/UX Designer Portfolio"
+          responsiveness="full responsive"
+          stack={['TypeScript', 'SCSS', 'NextJS', 'Styled-Components', 'React-Slick', 'framer-motion']}
+          codeLink=""
+          liveLink="https://zesan.co"
         />
         <ProjectBox
           img="/img/techiio.jpg"
@@ -42,17 +40,16 @@ export default function Projects() {
           stack={['ReactJS', 'Redux', 'Styled-Components', 'SCSS', 'semantic-ui-react', 'React-PDF']}
           codeLink=""
           liveLink="https://techiio.com"
-          delay={isMobile ? '0.5s' : '0.9s'}
         />
         <ProjectBox
-          img="/img/eevee.jpg"
-          title="Eevee"
+          img="/img/crypto-sphere.jpg"
+          title="cryptosphere"
           responsiveness="full responsive"
-          stack={['TypeScript', 'SCSS', 'NextJS', 'Styled-Components', 'WowJS', 'React-Slick']}
-          codeLink=""
-          liveLink="https://eevee.to"
-          delay={isMobile ? '0.5s' : '1.1s'}
+          stack={['TypeScript', 'NextJS', 'NextJS(ISR)', 'Styled-Components', 'ChartJS', 'RapidApi', 'CoinrankingApi']}
+          codeLink="https://github.com/abid-shahriar/crypto-sphere"
+          liveLink="https://cryptosphere.vercel.app"
         />
+
         <ProjectBox
           img="/img/moviesphere.jpg"
           title="Moviesphere"
@@ -60,7 +57,6 @@ export default function Projects() {
           stack={['TypeScript', 'NextJS', 'NextJS(ISR)', 'Styled-Components', 'react-slick', 'MovieDB Api']}
           codeLink="https://github.com/abid-shahriar/moviesphere"
           liveLink="https://moviesphere.vercel.app/"
-          delay={isMobile ? '0.5s' : '1.3s'}
         />
         <ProjectBox
           img="/img/memory-game.jpg"
@@ -69,7 +65,6 @@ export default function Projects() {
           stack={['ReactJS', 'TailwindCSS', 'TypeScript']}
           codeLink="https://github.com/abid-shahriar/memory-game"
           liveLink="https://memory123.netlify.app"
-          delay={isMobile ? '0.5s' : '1.5s'}
         />
       </ProjectsWrapper>
     </SectionContainer>
