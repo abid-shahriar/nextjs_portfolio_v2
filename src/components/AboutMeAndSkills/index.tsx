@@ -61,7 +61,10 @@ export default function AboutMeAndSkills() {
           </div>
           <div>
             <Typography margin=".5rem 0 0 0">
-              Resume: <a onClick={handlePdfDownload}>Click here to download</a>
+              Resume:{' '}
+              <a onClick={handlePdfDownload} href="https://abidshahriar.vercel.app/ABID_SHAHRIAR_RESUME.pdf">
+                Click here to download
+              </a>
             </Typography>
           </div>
           <SocialIcons isMobile={isMobile} />

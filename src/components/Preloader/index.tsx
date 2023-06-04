@@ -40,7 +40,7 @@ export default function Preloader() {
   return (
     <PreloaderContainer ref={preloaderRef}>
       <RocketWrapper>
-        <img src='/img/rocket.svg' alt='rocket' />
+        <img src="/img/rocket.svg" alt="rocket" />
       </RocketWrapper>
     </PreloaderContainer>
   );
