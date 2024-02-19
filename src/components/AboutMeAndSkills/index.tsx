@@ -89,8 +89,7 @@ export default function AboutMeAndSkills() {
             >
               Frontend:{' '}
             </span>
-            HTML, CSS, JavaScript, ReactJS, NextJS, Redux, ReactPDF, Styled Components, MUI, StoryBook, ContextApi, NodeJS,
-            MongoDB etc.
+            HTML, CSS, JavaScript, ReactJS, NextJS, Redux, ReactPDF, Styled Components, MUI, StoryBook, ContextApi etc.
           </Typography>
           <Typography margin="0 0 1rem 0">
             <span
@@ -100,7 +99,7 @@ export default function AboutMeAndSkills() {
             >
               Backend:{' '}
             </span>
-            Express, Postgres, Knex, Mongoose, Cookie, Prisma, CORS, REST Api, Formidable, TypeScript, github, git etc.
+            NodeJS, MongoDB Express, Postgres, Knex, Mongoose, Cookie, Prisma, CORS, REST Api, Formidable etc.
           </Typography>
           <Typography margin="0 0 1rem 0">
             <span
@@ -110,7 +109,7 @@ export default function AboutMeAndSkills() {
             >
               Other:{' '}
             </span>
-            Photoshop, Figma, ESlint, Testing, MailGun, Responsive Design, DigitalOcean, SEO etc.
+            TypeScript, Github, Git, Photoshop, Figma, ESlint, Testing, MailGun, Responsive Design, DigitalOcean, SEO etc.
           </Typography>
         </div>
       </Skills>
