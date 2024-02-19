@@ -5,7 +5,7 @@ export default function index() {
   return (
     <Footer>
       <Typography>
-        Abid Shahriar &copy;
+        Abid Shahriar &copy; &nbsp;
         {new Date().getFullYear()}
       </Typography>
       <Typography>5800 Bogura, Bangladesh</Typography>
