@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Typography } from '..';
 import SkillBox from './SkillBox';
 import SocialIcons from './SocialIcons';
+import { EmploymentTimeline } from './TimelIne';
 
 export default function AboutMeAndSkills() {
   const [isMobile, setIsMobile] = useState(false);
@@ -34,22 +35,18 @@ export default function AboutMeAndSkills() {
 
         <BioInfo>
           <div>
-            <Typography>
-              I&apos;m a self-taught full stack JavaScript developer from Bangladesh with 3+ years of experience in web
-              development.
+            <Typography margin="0 0 4rem 0">
+              With 4 years of experience in the field, I specialize in creating robust and efficient web applications. My
+              expertise spans both frontend and backend development, allowing me to deliver end-to-end solutions that meet
+              business requirements. I am passionate about staying up-to-date with the latest technologies and continuously
+              improving my skills.
             </Typography>
           </div>
 
+          <EmploymentTimeline />
+
           <div>
-            <Typography margin="1rem 0 4rem 0">
-              Currently working as a Backend Engineer at{' '}
-              <a href="https://www.valkyrie-it.com/deck" target="_blank" rel="noopener noreferrer">
-                Valkyrie IT LTD.
-              </a>
-            </Typography>
-          </div>
-          <div>
-            <Typography margin=".5rem 0 0 0">
+            <Typography margin="6rem 0 0 0">
               Email: <a href="mailto:abidshahriar7@gmail.com">abidshahriar7@gmail.com</a>
             </Typography>
           </div>
@@ -73,72 +70,49 @@ export default function AboutMeAndSkills() {
       <Skills>
         <div>
           <Typography margin="0 0 2rem 0">
-            For my office work and practice projects, I have worked with a lof of technologies from this web development world. In
-            this constantly evolving field, I always try to keep myself up-to-date with latest technologies. Learning new
-            technologies and doing experiments with them is kinda my thing.
+            As a web developer, I have gained experience in various technologies and frameworks. I am always eager to learn and
+            explore new developments in this dynamic field. I enjoy experimenting with different tools and techniques to enhance
+            my skills and creativity.
           </Typography>
         </div>
 
         <div>
-          <Typography>Here are some of the technologies I have worked with:</Typography>
+          <Typography margin="0 0 1.5rem 0">Here are some of the technologies I have worked with:</Typography>
         </div>
 
-        <SkillsWrapper>
-          <div>
-            <SkillBox
-              title="frontend"
-              skills={[
-                'HTML',
-                'CSS',
-                'JavaScript',
-                'SCSS',
-                'ReactJS',
-                'NextJS',
-                'Redux',
-                'ReactPDF',
-                'Styled Components',
-                'StoryBook',
-                'ContextApi',
-              ]}
-            />
-          </div>
-          <div>
-            <SkillBox
-              title="backend"
-              skills={[
-                'NodeJS',
-                'MongoDB',
-                'Express',
-                'Postgres',
-                'Knex',
-                'Mongoose',
-                'Cookie',
-                'Prisma',
-                'CORS',
-                'REST Api',
-                'Formidable',
-              ]}
-            />
-          </div>
-          <div>
-            <SkillBox
-              title="others"
-              skills={[
-                'TypeScript',
-                'github',
-                'git',
-                'Photoshop',
-                'Figma',
-                'ESlint',
-                'Testing',
-                'MailGun',
-                'Responsive Design',
-                'DigitalOcean',
-                'SEO',
-              ]}
-            />
-          </div>
-        </SkillsWrapper>
+        <div>
+          <Typography margin="0 0 1rem 0">
+            <span
+              style={{
+                color: '#cbd5e1',
+              }}
+            >
+              Frontend:{' '}
+            </span>
+            HTML, CSS, JavaScript, ReactJS, NextJS, Redux, ReactPDF, Styled Components, MUI, StoryBook, ContextApi, NodeJS,
+            MongoDB etc.
+          </Typography>
+          <Typography margin="0 0 1rem 0">
+            <span
+              style={{
+                color: '#cbd5e1',
+              }}
+            >
+              Backend:{' '}
+            </span>
+            Express, Postgres, Knex, Mongoose, Cookie, Prisma, CORS, REST Api, Formidable, TypeScript, github, git etc.
+          </Typography>
+          <Typography margin="0 0 1rem 0">
+            <span
+              style={{
+                color: '#cbd5e1',
+              }}
+            >
+              Other:{' '}
+            </span>
+            Photoshop, Figma, ESlint, Testing, MailGun, Responsive Design, DigitalOcean, SEO etc.
+          </Typography>
+        </div>
       </Skills>
     </StyledSection>
   );
@@ -150,7 +124,7 @@ const AboutMe = styled.div`
   border-radius: 5px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 4rem;
   max-width: var(--max-width);
 

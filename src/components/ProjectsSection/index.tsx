@@ -18,13 +18,14 @@ export default function Projects() {
     <SectionContainer id="projects">
       <ProjectsWrapper>
         <ProjectBox
-          img="/img/wikiance.jpg"
-          title="Wikiance"
+          img="/img/figicon.jpg"
+          title="Figicon"
           responsiveness="full responsive"
-          stack={['TypeScript', 'SCSS', 'NextJS', 'ReactJS', 'Styled-Components', 'React-Icons']}
+          stack={['NextJS', 'TailwindCSS', 'Headless UI', 'Clerk', 'NodeJS', 'ExpressJS', 'PostgresSQL', 'DigitalOcean']}
           codeLink=""
-          liveLink="https://wikiance.com"
+          liveLink="https://figicon.com"
         />
+
         <ProjectBox
           img="/img/zesan-co.jpg"
           title="UI/UX Designer Portfolio"
@@ -59,12 +60,12 @@ export default function Projects() {
           liveLink="https://moviesphere.vercel.app/"
         />
         <ProjectBox
-          img="/img/memory-game.jpg"
-          title="Memory Game"
+          img="/img/wikiance.jpg"
+          title="Wikiance"
           responsiveness="full responsive"
-          stack={['ReactJS', 'TailwindCSS', 'TypeScript']}
-          codeLink="https://github.com/abid-shahriar/memory-game"
-          liveLink="https://memory123.netlify.app"
+          stack={['TypeScript', 'SCSS', 'NextJS', 'ReactJS', 'Styled-Components', 'React-Icons']}
+          codeLink=""
+          liveLink="https://wikiance.com"
         />
       </ProjectsWrapper>
     </SectionContainer>
