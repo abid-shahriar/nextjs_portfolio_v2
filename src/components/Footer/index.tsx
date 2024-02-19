@@ -4,7 +4,10 @@ import { Typography } from '..';
 export default function index() {
   return (
     <Footer>
-      <Typography>Abid Shahriar &copy; 2023</Typography>
+      <Typography>
+        Abid Shahriar &copy;
+        {new Date().getFullYear()}
+      </Typography>
       <Typography>5800 Bogura, Bangladesh</Typography>
     </Footer>
   );
