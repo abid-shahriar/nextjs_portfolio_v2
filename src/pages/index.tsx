@@ -1,8 +1,12 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
 import styled from 'styled-components';
-import { HeroSection, Preloader, ProjectsSection, Footer } from '../components';
-import AboutMeAndSkills from '../components/AboutMeAndSkills';
+import dynamic from 'next/dynamic';
+import { HeroSection, Preloader } from '../components'; // Footer, ProjectsSection are now dynamic
+// import AboutMeAndSkills from '../components/AboutMeAndSkills'; // Now dynamic
+
+const AboutMeAndSkills = dynamic(() => import('../components/AboutMeAndSkills'));
+const Footer = dynamic(() => import('../components/Footer'));
 
 export default function Home() {
   useEffect(() => {
@@ -22,7 +26,6 @@ export default function Home() {
       <Main>
         <HeroSection />
         <AboutMeAndSkills />
-        <ProjectsSection />
       </Main>
       <Footer />
 
@@ -49,5 +52,43 @@ const Main = styled.main`
   overflow: hidden;
   section {
     padding: 5rem 2.5%;
+  }
+
+  /* *_animate */
+  [class*='_animate'] {
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  .animate.fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  .animate.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 `;

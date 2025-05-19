@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import Image from 'next/image';
 import { Typography } from '..';
 import SkillBox from './SkillBox';
 import SocialIcons from './SocialIcons';
 import { EmploymentTimeline } from './TimelIne';
+import { useAnimation } from '../../hooks/useAnimation';
 
 export default function AboutMeAndSkills() {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,17 +28,20 @@ export default function AboutMeAndSkills() {
       setIsMobile(true);
     }
   }, []);
+
+  useAnimation({ suffix: 'about_' });
+
   return (
     <StyledSection>
       <AboutMe>
-        <ImageContainer>
-          <img src="./me.jpg" alt="abid shahriar" />
+        <ImageContainer className="about_animate fadeIn" style={{ animationDelay: '.5s' }}>
+          <img src="/me.jpg" alt="abid shahriar" width={320} height={320} />
         </ImageContainer>
 
         <BioInfo>
-          <div>
+          <div className="about_animate fadeInUp" style={{ animationDelay: '.8s' }}>
             <Typography margin="0 0 4rem 0">
-              With 4 years of experience in the field, I specialize in creating robust and efficient web applications. My
+              With 4+ years of experience in the field, I specialize in creating robust and efficient web applications. My
               expertise spans both frontend and backend development, allowing me to deliver end-to-end solutions that meet
               business requirements. I am passionate about staying up-to-date with the latest technologies and continuously
               improving my skills.
@@ -45,21 +50,15 @@ export default function AboutMeAndSkills() {
 
           <EmploymentTimeline />
 
-          <div>
+          <div className="about_animate fadeInUp" style={{ animationDelay: '.5s' }}>
             <Typography margin="6rem 0 0 0">
               Email: <a href="mailto:abidshahriar7@gmail.com">abidshahriar7@gmail.com</a>
             </Typography>
           </div>
-
-          <div>
-            <Typography margin=".5rem 0 0 0">
-              Phone: <a href="tel:+8801726389558">+8801726389558</a>
-            </Typography>
-          </div>
-          <div>
+          <div className="about_animate fadeInUp" style={{ animationDelay: '.8s' }}>
             <Typography margin=".5rem 0 0 0">
               Resume:{' '}
-              <a onClick={handlePdfDownload} href="https://abidshahriar.vercel.app/ABID_SHAHRIAR_RESUME.pdf">
+              <a onClick={handlePdfDownload} href="/ABID_SHAHRIAR_RESUME.pdf">
                 Click here to download
               </a>
             </Typography>
@@ -68,7 +67,7 @@ export default function AboutMeAndSkills() {
         </BioInfo>
       </AboutMe>
       <Skills>
-        <div>
+        <div className="about_animate fadeInUp" style={{ animationDelay: '0' }}>
           <Typography margin="0 0 2rem 0">
             As a web developer, I have gained experience in various technologies and frameworks. I am always eager to learn and
             explore new developments in this dynamic field. I enjoy experimenting with different tools and techniques to enhance
@@ -76,41 +75,49 @@ export default function AboutMeAndSkills() {
           </Typography>
         </div>
 
-        <div>
-          <Typography margin="0 0 1.5rem 0">Here are some of the technologies I have worked with:</Typography>
+        <div className="about_animate fadeInUp" style={{ animationDelay: '.3s' }}>
+          <Typography variant="h2" margin="0 0 1.5rem 0" fontSize="2.2rem">
+            Here are some of the technologies I have worked with:
+          </Typography>
         </div>
 
         <div>
-          <Typography margin="0 0 1rem 0">
-            <span
-              style={{
-                color: '#cbd5e1',
-              }}
-            >
-              Frontend:{' '}
-            </span>
-            HTML, CSS, JavaScript, ReactJS, NextJS, Redux, ReactPDF, Styled Components, MUI, StoryBook, ContextApi etc.
-          </Typography>
-          <Typography margin="0 0 1rem 0">
-            <span
-              style={{
-                color: '#cbd5e1',
-              }}
-            >
-              Backend:{' '}
-            </span>
-            NodeJS, MongoDB Express, Postgres, Knex, Mongoose, Cookie, Prisma, CORS, REST Api, Formidable etc.
-          </Typography>
-          <Typography margin="0 0 1rem 0">
-            <span
-              style={{
-                color: '#cbd5e1',
-              }}
-            >
-              Other:{' '}
-            </span>
-            TypeScript, Github, Git, Photoshop, Figma, ESlint, Testing, MailGun, Responsive Design, DigitalOcean, SEO etc.
-          </Typography>
+          <div className="about_animate fadeInUp" style={{ animationDelay: '.6s' }}>
+            <Typography margin="0 0 1rem 0">
+              <span
+                style={{
+                  color: '#cbd5e1',
+                }}
+              >
+                Frontend:{' '}
+              </span>
+              HTML, CSS, JavaScript, ReactJS, NextJS, Redux, ReactPDF, Styled Components, MUI, StoryBook, ContextApi etc.
+            </Typography>
+          </div>
+          <div className="about_animate fadeInUp" style={{ animationDelay: '.8s' }}>
+            <Typography margin="0 0 1rem 0">
+              <span
+                style={{
+                  color: '#cbd5e1',
+                }}
+              >
+                Backend:{' '}
+              </span>
+              NodeJS, MongoDB Express, Postgres, Knex, Mongoose, Cookie, Prisma, CORS, REST Api, Formidable etc.
+            </Typography>
+          </div>
+          <div className="about_animate fadeInUp" style={{ animationDelay: '.9s' }}>
+            <Typography margin="0 0 1rem 0">
+              <span
+                style={{
+                  color: '#cbd5e1',
+                }}
+              >
+                Other:{' '}
+              </span>
+              TypeScript, Github, Git, Photoshop, Figma, ESlint, Testing, MailGun, Responsive Design, DigitalOcean, SEO etc.
+            </Typography>
+          </div>
         </div>
       </Skills>
     </StyledSection>
@@ -162,31 +169,6 @@ const Skills = styled.div`
   background-color: rgba(133, 133, 133, 0.2);
   border-radius: 5px;
   max-width: var(--max-width);
-`;
-
-const SkillsWrapper = styled.div`
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-
-  & > * {
-    margin: 2rem;
-  }
-
-  @supports (gap: 4rem) {
-    gap: 4rem;
-
-    @media (max-width: 992px) {
-      gap: 2rem;
-    }
-
-    & > * {
-      margin: 0rem;
-    }
-  }
-  @media (max-width: 992px) {
-    flex-direction: column;
-  }
 `;
 
 const StyledSection = styled.section`

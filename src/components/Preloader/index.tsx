@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 
+
 export default function Preloader() {
   const preloaderRef = useRef<HTMLDivElement | null>(null);
 

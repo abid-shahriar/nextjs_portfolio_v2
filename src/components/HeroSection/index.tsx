@@ -1,38 +1,43 @@
 import styled from 'styled-components';
 import { BsChevronDoubleDown, BsFillEmojiLaughingFill } from 'react-icons/bs';
-import { MdOutlineTagFaces } from 'react-icons/md';
 
 import { Typography } from '..';
 import BackgroundAnimation from './BackgroundAnimation';
+import { useAnimation } from '../../hooks/useAnimation';
 
 export default function HeroSection() {
+  useAnimation({ suffix: 'hero_' });
+
   return (
     <StyledSection>
       <BackgroundAnimation />
       <InitialInfo>
-        <div className="wow fadeInUp" data-wow-delay="2.2s">
-          <StyledTypo variant="title" textalign="center" fontSize="4rem" fontWeight="400">
-            Hello there,{' '}
-          </StyledTypo>
-          <StyledTypo variant="title" textalign="center" fontSize="4rem" fontWeight="400">
-            <Typography variant="span" color="var(--color-secondary)">
-              Abid Shahriar
-            </Typography>{' '}
-            here
+        <div>
+          <StyledTypo variant="h1" textalign="center" fontSize="4rem" fontWeight="600">
+            <span className="hero_animate fadeInUp" style={{ animationDelay: '2s' }}>
+              Hello there,
+            </span>
+            <br />
+            <span className="hero_animate fadeInUp" style={{ animationDelay: '2.5s', display: 'inline-block' }}>
+              <Typography variant="span" color="var(--color-secondary)">
+                Abid Shahriar
+              </Typography>{' '}
+              here
+            </span>
           </StyledTypo>
         </div>
 
-        <div className="wow fadeInUp" data-wow-delay="2.5s">
-          <StyledTypo fontSize="3.5rem" textalign="center" margin="2rem 0 3rem">
+        <div className="hero_animate fadeInUp having-a-good-day" style={{ animationDelay: '2.9s' }}>
+          <StyledTypo variant="p" fontSize="3.5rem" textalign="center" margin="2rem 0 3rem">
             Hope you are having a great day!!
           </StyledTypo>
         </div>
-        <div className="wow zoomInUp" data-wow-delay="2.7s" style={{ animationDuration: '2s' }}>
+        <div className="hero_animate fadeInUp" style={{ animationDelay: '3.2s' }}>
           <BsFillEmojiLaughingFill size="5rem" color="var(--color-secondary)" />
         </div>
       </InitialInfo>
 
-      <DownIcon className="wow fadeInUp" data-wow-delay="2.9s">
+      <DownIcon>
         <BsChevronDoubleDown size="4rem" color="var(--color-secondary)" />
       </DownIcon>
     </StyledSection>
@@ -49,7 +54,6 @@ const DownIcon = styled.div`
   }
 
   @media (max-width: 768px) {
-    position: static;
     margin-top: 4rem;
   }
 
@@ -84,6 +88,14 @@ const StyledSection = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  .having-a-good-day {
+    p {
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+  }
 `;
 
 const StyledTypo = styled(Typography)`

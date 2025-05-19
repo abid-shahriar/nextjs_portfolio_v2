@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Typography from '../Typography';
+import { useAnimation } from '../../hooks/useAnimation';
 
 interface Props {
   timeDuration: string;
@@ -11,24 +12,26 @@ interface Props {
 export const SingleTimelineItem = (props: Props) => {
   const { timeDuration, companyName, companyLocation, designation, employmentType = 'Full-time' } = props;
 
+  useAnimation({ suffix: 'timeline_' });
+
   return (
     <TimelineItem>
-      <TimelineDate dateTime="1970-01-01">
+      <TimelineDate dateTime="1970-01-01" className="timeline_animate fadeInUp" style={{ animationDelay: '.5s' }}>
         <Typography color="#cbd5e1" fontSize="1.5rem">
           {timeDuration} :: {employmentType}
         </Typography>
       </TimelineDate>
+      <div className="timeline_animate fadeInUp" style={{ animationDelay: '.7s' }}>
+        <Typography variant="h3" margin=".7rem 0 0 0" fontSize="1.7rem">
+          {designation} at {companyName}
+        </Typography>
+      </div>
 
-      <Typography margin=".7rem 0 0 0">
-        {designation} at {companyName}{' '}
-      </Typography>
-
-      {/* <Typography color="#cbd5e1" fontSize="1.5rem">
-        {employmentType}
-      </Typography> */}
-      <Typography color="#cbd5e1" fontSize="1.5rem">
-        {companyLocation}
-      </Typography>
+      <div className="timeline_animate fadeInUp" style={{ animationDelay: '.9s' }}>
+        <Typography color="#cbd5e1" fontSize="1.5rem">
+          {companyLocation}
+        </Typography>
+      </div>
     </TimelineItem>
   );
 };
@@ -82,7 +85,7 @@ export const EmploymentTimeline = () => {
         <SingleTimelineItem
           timeDuration="Oct 2023 - Present"
           companyName="Confidential (Stealth Mode Company)"
-          companyLocation="New York, USA"
+          companyLocation="Minnesota, USA"
           designation="Frontend Developer"
         />
 
@@ -94,18 +97,17 @@ export const EmploymentTimeline = () => {
         />
 
         <SingleTimelineItem
-          timeDuration="Nov 2020 - Oct 2021"
-          companyName="Wikiance"
-          companyLocation="Kolkata, West Bengal, India"
-          designation="Frontend Engineer"
-        />
-
-        <SingleTimelineItem
           timeDuration="Mar 2021 - May 2021"
           companyName="Manaknight Digital"
           companyLocation="Toronto, Ontario, Canada"
           designation="Frontend Developer"
           employmentType="Part-time"
+        />
+        <SingleTimelineItem
+          timeDuration="Nov 2020 - Oct 2021"
+          companyName="Wikiance"
+          companyLocation="Kolkata, West Bengal, India"
+          designation="Frontend Engineer"
         />
       </div>
     </>

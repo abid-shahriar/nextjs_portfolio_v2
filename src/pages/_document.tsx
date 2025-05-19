@@ -32,7 +32,15 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+          {/* preload rocket.svg */}
+          <link rel="preload" href="/img/rocket.svg" as="image" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
+          {/* Original favicon link below, can be kept or removed if covered by new ones */}
+          <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="canonical" href="https://abidshahriar.vercel.app" />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,12 +51,35 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
+          {/* SEO Meta Tags Added by Cascade */}
+          <meta name="author" content="Abid Shahriar" />
+          <meta
+            name="description"
+            content="Portfolio of Abid Shahriar, a Full-Stack Web Developer specializing in React, Next.js, and Node.js. Discover projects and expertise in modern web technologies."
+          />
+          <meta
+            name="keywords"
+            content="Abid Shahriar, Full-Stack Developer, Web Developer, React, Next.js, Node.js, JavaScript, TypeScript, Portfolio, HTML, CSS, MongoDB, Postgres, API, Backend, Frontend"
+          />
+
+          {/* Open Graph Meta Tags */}
+          <meta property="og:site_name" content="Abid Shahriar" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://abidshahriar.vercel.app" />
+          <meta property="og:image" content="https://abidshahriar.vercel.app/me.jpg" />
+          <meta property="og:image:alt" content="Abid Shahriar - Portfolio Image" />
+
+          {/* Twitter Card Meta Tags */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@abid_sh_akash" />
+          <meta name="twitter:creator" content="@abid_sh_akash" />
+          <meta name="twitter:image" content="https://abidshahriar.vercel.app/me.jpg" />
+          <meta name="twitter:image:alt" content="Abid Shahriar - Portfolio Image" />
+          {/* End of SEO Meta Tags Added by Cascade */}
         </Head>
         <body>
           <Main />
           <NextScript />
-          <script src="/scripts/wow.js" defer></script>
         </body>
       </Html>
     );
