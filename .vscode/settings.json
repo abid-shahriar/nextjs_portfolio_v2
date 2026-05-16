@@ -14,5 +14,6 @@
     "textalign",
     "Trello",
     "Wikiance"
-  ]
+  ],
+  "js/ts.tsdk.path": "node_modules\\typescript\\lib"
 }

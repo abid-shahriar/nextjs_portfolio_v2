@@ -3,8 +3,9 @@ import Head from 'next/head';
 import '../styles/main.scss';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const siteTitle = "Abid Shahriar - Full-Stack Developer";
-  const defaultDescription = "Portfolio of Abid Shahriar, a Full-Stack Web Developer specializing in React, Next.js, and Node.js. Discover projects and expertise in modern web technologies.";
+  const siteTitle = 'Abid Shahriar - Full-Stack Developer';
+  const defaultDescription =
+    'Portfolio of Abid Shahriar, a Full-Stack Web Developer specializing in React, Next.js, and Node.js. Discover projects and expertise in modern web technologies.';
   // const siteUrl = "https://abidshahriar.vercel.app"; // Already in _document
   // const defaultImage = "https://abidshahriar.vercel.app/me.jpg"; // Already in _document
 
@@ -13,7 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         {/* Default Title - can be overridden by individual pages */}
         <title>{siteTitle}</title>
-        
+
         {/* Default Description - can be overridden */}
         <meta name="description" content={defaultDescription} />
 
