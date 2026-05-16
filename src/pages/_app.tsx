@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import '../styles/main.scss';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
@@ -30,6 +31,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         {/* twitter:card, twitter:site, twitter:creator, twitter:image are in _document.tsx */}
       </Head>
       <Component {...pageProps} />
+      <SpeedInsights />
     </>
   );
 }
